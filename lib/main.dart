@@ -15,9 +15,14 @@ class MyApp extends StatelessWidget {
         appBar: buildAppBar(),
         body: Body(),
         floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.star),
           onPressed: () {
-            var snackbar = SnackBar(content: Text('hi flutter'));
-            Scaffold.of(context).showSnackBar(snackbar);
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => SecondRoot(),
+              ),
+            );
           },
         ),
       ),
