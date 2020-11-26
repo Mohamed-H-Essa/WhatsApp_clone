@@ -91,9 +91,9 @@ class _ChatsState extends State<Chats> {
             image: 'assets/ammar.png',
           ),
           Contact(
-            name: 'arbitrary name',
-            dummyText: 'pla pla pla...',
-            image: 'assets/mahmoud.png',
+            name: 'Farah',
+            dummyText: 'an hour left for the sl...',
+            image: 'assets/farah.png',
           ),
           Contact(
             name: 'some other name',
@@ -120,8 +120,12 @@ class _ChatsState extends State<Chats> {
 class Contact extends StatelessWidget {
   Contact({this.name, this.image, this.dummyText});
   final String name, image, dummyText;
+  
+  
   @override
   Widget build(BuildContext context) {
+    
+
     return GestureDetector(
       onTap: () {
         Navigator.push(
