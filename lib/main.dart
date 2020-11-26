@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'body.dart';
-import 'secondRoot.dart';
 
 void main() => runApp(MyApp());
 
